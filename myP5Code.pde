@@ -4,15 +4,22 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var x = 200;
+var y = 100;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
+    
   background(255,255,255,0);
   
+ 
+// cloud
+  ellipse(x, y, 200, 100); // face
+  
 
-
+  //moveing
+  x=mouseX
+  y=mouseY
 
 
 

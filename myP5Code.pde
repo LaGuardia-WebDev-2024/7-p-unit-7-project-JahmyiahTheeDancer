@@ -79,33 +79,41 @@ quad(bird2x+99,250,bird2x+149,262,bird2x+160,240,bird2x+99,220);
   
  //wings right
  fill(142, 175, 232)
-  ellipse(300,104,75,20);
+  ellipse(300+bird3x,104,75,20);
   
   //left wing
-  ellipse(370,104,75,20);
+  ellipse(370+bird3x,104,75,20);
 
  
  
   // bird body 
   fill(83, 113, 163);
-  rect(bird3x+300,70,70,70);
+  rect(300+bird3x,70,70,70);
  
  
  //bird nose
   noStroke();
   fill(59, 62, 71);
-  ellipse(335,110,7,30)
+  ellipse(335+bird3x,110,7,30)
 
 
   //eyes
   fill(0,0,0)
-  ellipse(315,95,10,10)
-  ellipse(355,95,10,10)
+  ellipse(315+bird3x,95,10,10)
+  ellipse(355+bird3x,95,10,10)
   
 
 
-  birdx += +1;
+  birdx += +2;
   bird2x += 4;
+  bird3x += 3;
+
+  if(birdx>600){
+     birdx=-100
+     bird2x=-120
+     bird3x=-50
+
+  }
  
 
 
